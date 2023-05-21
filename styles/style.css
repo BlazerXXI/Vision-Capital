@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #23155b;
+  --main-primary: #8053ff;
+  --bs-link-hover-color: #8053ff;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.title-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2.22;
+}
+.title-header::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 60px;
+  background-image: url("../images/header/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  padding: 0 10px;
+}
+
+body,
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 0.3s ease 0s;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover,
+a:focus {
+  transition: all 0.3s ease 0s;
+  color: var(--main-primary);
+}
