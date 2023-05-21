@@ -7,9 +7,8 @@
   --black: #000000;
 }
 
-.wrapper {
+.container {
   max-width: 1440px;
-  margin: 0px auto;
 }
 
 .title-header {
@@ -45,11 +44,16 @@
 
 header {
   padding: 0 10px;
+  margin-top: 24px;
 }
 
 body,
 html {
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: 500;
+  line-height: 2.22;
 }
 
 a,
@@ -69,3 +73,81 @@ a:focus {
 a:active {
   transform: scale(0.9);
 }
+
+.burger-btn {
+  z-index: 300;
+  position: fixed;
+  top: 25px;
+  right: 10px;
+  min-width: 34px;
+  min-height: 32px;
+  margin-top: -14px;
+  border: none;
+  background: none;
+}
+
+.burger-btn span {
+  transition: all 0.3s ease 0s;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--main-primary);
+}
+
+.burger-btn span::before {
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  top: -6px;
+  content: "";
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--main-primary);
+}
+.burger-btn span::after {
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  content: "";
+  bottom: -6px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--main-primary);
+}
+
+.burger-active {
+}
+.burger-active span {
+  height: 0;
+}
+.burger-active span::before {
+  transform: rotate(-45deg);
+  top: -2px;
+}
+.burger-active span::after {
+  transform: rotate(45deg);
+  bottom: 0;
+}
+.nav-active {
+  transition: all 0.3s ease-in-out 0s;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  nav {
+    transition: all 0.3s ease-in-out 0s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -3000px;
+    left: 0;
+    background: var(--white);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/* Main */
+
