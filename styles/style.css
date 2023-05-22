@@ -38,6 +38,24 @@
   border-radius: 8px;
   background: var(--white);
 }
+.btn-active {
+  background-color: var(--white) !important;
+  color: var(--main-primary) !important;
+  border: 1px solid var(--main-primary) !important;
+}
+.btn-active:hover,
+.btn-active:focus {
+  background-color: var(--main-primary) !important;
+  color: var(--white) !important;
+}
+.btn-primary {
+  background-color: var(--main-primary);
+  color: var(--white);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--white);
+}
 .fw-regular {
   font-weight: 500 !important;
 }
@@ -136,6 +154,7 @@ a:active {
 
 @media (max-width: 768px) {
   nav {
+    z-index: 100;
     transition: all 0.3s ease-in-out 0s;
     flex-direction: column;
     justify-content: center;
@@ -150,4 +169,27 @@ a:active {
 }
 
 /* Main */
+main {
+}
+.hero {
+}
 
+.hero::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100vh;
+  min-width: 100%;
+  background-image: url("../images/main/container.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+  }
+}
