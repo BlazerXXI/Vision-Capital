@@ -71,6 +71,7 @@
 }
 
 header {
+  position: relative;
   padding: 0 10px;
 }
 
@@ -171,6 +172,7 @@ a:active {
 
 @media (max-width: 768px) {
   nav {
+    position: fixed;
     z-index: 100;
     transition: all 0.3s ease-in-out 0s;
     flex-direction: column;
@@ -181,7 +183,6 @@ a:active {
     background: var(--white);
     height: 100vh;
     width: 100%;
-    position: absolute;
   }
 }
 
