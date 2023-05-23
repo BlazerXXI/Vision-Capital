@@ -247,12 +247,21 @@ main {
     margin: 200px 0px 0px 0px;
   }
 }
+.traditional-fundraising ul {
+}
 .list-card {
   background: var(--white);
   box-shadow: 0px 8px 12px -6px rgba(35, 21, 91, 0.05),
     0px 14px 64px -4px rgba(35, 21, 91, 0.05);
   border-radius: 8px;
-
   display: flex;
   gap: 12px;
+}
+.list-card span {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--main-primary) !important;
+}
+.list-card span {
+  font-size: 18px;
 }
