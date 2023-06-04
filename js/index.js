@@ -45,4 +45,6 @@ $(document).ready(function () {
       }
     })
   );
+
+	// http://127.0.0.1:5500/?firstName=%D0%A0%D1%83%D1%81%D0%BB%D0%B0%D0%BD&lastName=%D0%9A%D0%B0%D1%80%D0%BB%D1%8E%D0%BA&email=ruslandendik%40gmail.com#
 });

@@ -175,6 +175,12 @@ button {
 }
 .btn:hover {
   border-color: #8053ff;
+  background: var(--white) !important;
+	color: var(--main-primary) !important;
+}
+.btn-active:hover {
+  background: var(--main-primary) !important;
+  color: var(--white) !important;
 }
 .burger-btn {
   z-index: 3;
