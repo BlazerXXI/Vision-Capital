@@ -31,9 +31,18 @@ $(document).ready(function () {
   $(document).on("click", (event) => {
     if (event.target.id == "bgPopup") {
       $("#popupJoinNow").addClass("visually-hidden");
-    } else if (event.target.id == "joinNowButton") {
+    }
+  });
+  $(document).on("click", (event) => {
+    if (event.target.id == "joinNowButton") {
       $("#burgerMenu").removeClass("burger-active"); // Удаляем класс "burger-active" у текущей нажатой кнопки
       $("#nav").removeClass("nav-active"); // Удаляем класс "nav-active" у элемента с id "nav"
     }
-  });
+  })(
+    $(document).on("keydown", (event) => {
+      if (event.keyCode == 27) {
+        $("#popupJoinNow").addClass("visually-hidden");
+      }
+    })
+  );
 });
