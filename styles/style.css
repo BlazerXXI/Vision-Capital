@@ -132,7 +132,7 @@ html {
 @media (max-width: 768px) {
   body,
   html {
-    font-size: 10px !important;
+    font-size: 14px !important;
   }
 }
 main > * {
