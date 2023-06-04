@@ -19,7 +19,7 @@ $(document).ready(function () {
       clearTimeout(timer);
     }, 6000);
   };
-  // timerOpenJoinNow();
+  timerOpenJoinNow();
 
   $("#joinNowButton").click(() => {
     $("#popupJoinNow").removeClass("visually-hidden");
