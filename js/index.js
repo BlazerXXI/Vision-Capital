@@ -17,7 +17,7 @@ $(document).ready(function () {
     const timer = setTimeout(() => {
       $("#popupJoinNow").removeClass("visually-hidden");
       clearTimeout(timer);
-    }, 6000);
+    }, 60000);
   };
   timerOpenJoinNow();
 
