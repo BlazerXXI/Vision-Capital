@@ -10,8 +10,6 @@
   --gray-color: #928cab;
   --bs-secondary-rgb: #8053ff;
 }
-.wrapper {
-}
 @media (max-width: 768px) {
   .w-md-100 {
     width: 100% !important;
@@ -109,8 +107,6 @@ p {
 }
 .btn-primary:hover {
   background-color: var(--white);
-}
-.btn-primary:active {
 }
 .fw-regular {
   font-weight: 500 !important;
@@ -227,8 +223,6 @@ button {
   background: var(--main-primary);
 }
 
-.burger-active {
-}
 .burger-active span {
   height: 0;
 }
@@ -268,10 +262,6 @@ button {
 }
 
 /* Main */
-main {
-}
-.hero {
-}
 @media (min-width: 769px) {
   .hero {
     min-height: 596px;
@@ -445,5 +435,29 @@ main {
     margin-top: 50px;
   }
 }
-.high-potential__container {
+/* by-defipie */
+.by-defipie {
+  margin-top: 200px;
+
+  min-height: 830px;
+}
+@media (max-width: 768px) {
+  .by-defipie {
+    margin-top: 50px;
+  }
+  .bg-max-sm-black {
+    padding: 15px 24px;
+    background: #ffffffad;
+  }
+}
+.z-max-sm-n1 {
+  z-index: 2;
+}
+.mxw-579 {
+  max-width: 579px;
+}
+@media (max-width: 1000px) {
+  .z-max-sm-n1 {
+    z-index: -1;
+  }
 }
