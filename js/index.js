@@ -14,12 +14,12 @@ $(document).ready(function () {
   });
 
   const timerOpenJoinNow = () => {
-    const timer = setTimeout(async () => {
-      await $("#popupJoinNow").removeClass("visually-hidden");
+    const timer = setTimeout(() => {
+      $("#popupJoinNow").removeClass("visually-hidden");
       clearTimeout(timer);
-    }, 3000);
+    }, 6000);
   };
-  timerOpenJoinNow();
+  // timerOpenJoinNow();
 
   $("#joinNowButton").click(() => {
     $("#popupJoinNow").removeClass("visually-hidden");
