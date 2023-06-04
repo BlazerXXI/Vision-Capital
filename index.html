@@ -29,6 +29,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="./font-awesome/css/fontawesome.css"
+      rel="stylesheet"
+    />
+    <link href="./font-awesome/css/brands.css" rel="stylesheet" />
+    <link href="./font-awesome/css/solid.css" rel="stylesheet" />
     <!-- Script JS -->
     <script src="./js/index.js"></script>
     <!-- Styles CSS -->
@@ -47,7 +54,11 @@
           <a class="" href="./">
             <h2 class="title-header">Vision Capital</h2>
           </a>
-          <button id="burgerMenu" class="d-block d-md-none burger-btn">
+          <button
+            type="button"
+            id="burgerMenu"
+            class="d-block d-md-none burger-btn"
+          >
             <span></span>
           </button>
           <nav
@@ -60,12 +71,90 @@
             <a class="nav-link p-0 text-center me-md-4 pe-md-3" href="#"
               >For Investors</a
             >
-            <a class="nav-link btn text-center btn-header" href="#">Join Now</a>
+            <a
+              class="nav-link btn text-center btn-header"
+              id="joinNowButton"
+              href="#"
+              >Join Now</a
+            >
           </nav>
         </div>
       </header>
       <!-- main -->
       <main class="mt-4">
+        <div class="visually-hidden" id="popupJoinNow">
+          <i
+            id="bgPopup"
+            class="position-absolute w-100 h-100 bg-black top-0 start-0 z-3 opacity-50"
+          ></i>
+          <div
+            class="z-3 main__popup__join-now position-absolute top-50 start-50 translate-middle p-3 bg-white rounded border-primary w-75 rounded-3 shadow"
+            id="joinNow"
+          >
+            <button
+              id="popupClose"
+              class="position-absolute top-0 end-0 p-2 mt-2 me-2"
+            >
+              <i
+                class="fa fa-times fs-3"
+                id="closePopupButton"
+                aria-hidden="true"
+              ></i>
+            </button>
+            <div
+              class="popup__join-now__container d-flex justify-content-center flex-column align-items-center gap-3 h-100"
+            >
+              <h2 class="fs-2 fw-bold">Join Now</h2>
+              <p class="text-gray w-50 text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+                mollitia.
+              </p>
+              <form
+                id="joinNowForm"
+                name="joinNow"
+                class="d-flex gap-4 flex-column justify-content-center align-items-center w-100"
+                action="#"
+              >
+                <div class="col-md-4">
+                  <label for="" class="form-label">First name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id=""
+                    value=""
+                    required
+                  />
+                </div>
+                <div class="col-md-4">
+                  <label for="" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name=""
+                    id=""
+                    aria-describedby="emailHelpId"
+                    placeholder="abc@mail.com"
+                  />
+                </div>
+                <div>
+                  <button id="btn-popup" type="submit" class="btn btn-primary">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
         <!-- hero section -->
         <section class="hero position-relative">
           <div
@@ -188,7 +277,9 @@
                 listing.
               </p>
             </div>
-            <ul class="list-unstyled row row-cols-2 row-cols g-4 gap-4 ">
+            <ul
+              class="list-unstyled row row-cols-2 row-cols gap-3 justify-content-between"
+            >
               <li class="p-4 d-flex card-item align-items-center">
                 <div class="d-flex flex-column gap-1">
                   <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
@@ -298,16 +389,49 @@
                 listing.
               </p>
             </div>
-            <ul class="list-unstyled">
+            <ul
+              class="list-unstyled row row-cols-2 row-cols gap-3 justify-content-center"
+            >
               <li class="p-4 d-flex card-item align-items-center">
                 <div class="d-flex flex-column gap-1">
                   <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
-                    Decentralized investments
+                    Low entry prices on DeFi tokens
                   </h3>
-                  <p class="fw-normal text-gray ps-4 ms-3">
-                    we'll distribute your tokens among our huge and active
-                    community
-                  </p>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Low entry prices on DeFi tokens
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Low entry prices on DeFi tokens
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Low entry prices on DeFi tokens
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Low entry prices on DeFi tokens
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Low entry prices on DeFi tokens
+                  </h3>
                 </div>
               </li>
             </ul>

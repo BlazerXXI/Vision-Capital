@@ -13,4 +13,27 @@ $(document).ready(function () {
     }
   });
 
+  const timerOpenJoinNow = () => {
+    const timer = setTimeout(async () => {
+      await $("#popupJoinNow").removeClass("visually-hidden");
+      clearTimeout(timer);
+    }, 3000);
+  };
+  timerOpenJoinNow();
+
+  $("#joinNowButton").click(() => {
+    $("#popupJoinNow").removeClass("visually-hidden");
+  });
+  $("#closePopupButton").click(() => {
+    $("#popupJoinNow").addClass("visually-hidden");
+  });
+
+  $(document).on("click", (event) => {
+    if (event.target.id == "bgPopup") {
+      $("#popupJoinNow").addClass("visually-hidden");
+    } else if (event.target.id == "joinNowButton") {
+      $("#burgerMenu").removeClass("burger-active"); // Удаляем класс "burger-active" у текущей нажатой кнопки
+      $("#nav").removeClass("nav-active"); // Удаляем класс "nav-active" у элемента с id "nav"
+    }
+  });
 });
