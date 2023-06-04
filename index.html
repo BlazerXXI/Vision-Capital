@@ -33,63 +33,75 @@
     <script src="./js/index.js"></script>
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/zeroing-min.css" />
   </head>
   <!-- Body HTML -->
   <body>
     <!-- container block -->
-    <div class="container">
+    <div class="wrapper">
       <!-- header -->
-      <header
-        class="d-flex justify-content-center justify-content-md-between align-items-center position-relative pb-1 mt-md-4"
-      >
-        <a class="" href="./">
-          <h2 class="title-header">Vision Capital</h2>
-        </a>
-        <button id="burgerMenu" class="d-block d-md-none burger-btn">
-          <span></span>
-        </button>
-        <nav
-          id="nav"
-          class="nav fw-regular d-md-flex justify-content-center align-items-center gap-4"
+      <header class="position-relative pb-1 mt-md-4">
+        <div
+          class="header__container _container d-flex justify-content-center justify-content-md-between align-items-center"
         >
-          <a class="nav-link p-0 text-center me-md-2" href="#">For Projects</a>
-          <a class="nav-link p-0 text-center me-md-4 pe-md-3" href="#"
-            >For Investors</a
+          <a class="" href="./">
+            <h2 class="title-header">Vision Capital</h2>
+          </a>
+          <button id="burgerMenu" class="d-block d-md-none burger-btn">
+            <span></span>
+          </button>
+          <nav
+            id="nav"
+            class="nav fw-regular d-md-flex justify-content-center align-items-center gap-4"
           >
-          <a class="nav-link btn text-center btn-header" href="#">Join Now</a>
-        </nav>
+            <a class="nav-link p-0 text-center me-md-2" href="#"
+              >For Projects</a
+            >
+            <a class="nav-link p-0 text-center me-md-4 pe-md-3" href="#"
+              >For Investors</a
+            >
+            <a class="nav-link btn text-center btn-header" href="#">Join Now</a>
+          </nav>
+        </div>
       </header>
       <!-- main -->
       <main class="mt-4">
         <!-- hero section -->
-        <section
-          class="hero position-relative gap-2 d-flex flex-column justify-content-center text-center align-items-center"
-        >
-          <h2 class="hero-title fw-bold">Vision Capital</h2>
-          <p class="fw-normal fs-4">
-            The right way to fund and incubate your DeFi startup
-          </p>
-          <div class="mt-4 pt-3 d-flex flex-row gap-1">
-            <a
-              name=""
-              id=""
-              class="btn btn-primary text-white me-2"
-              href="#"
-              role="button"
-              >I Need Funding</a
+        <section class="hero position-relative">
+          <div
+            class="hero__container _container py-5 p-md-0 align-items-center gap-2 d-flex flex-column justify-content-center text-center align-items-center"
+          >
+            <i class="hero__hero-bg"></i>
+            <h2 class="hero-title fw-bold">Vision Capital</h2>
+            <p class="fw-normal fs-4">
+              The right way to fund and incubate your DeFi startup
+            </p>
+            <div
+              class="mt-4 pt-3 d-flex flex-column gap-3 gap-md-1 flex-md-row"
             >
-            <a
-              name=""
-              id=""
-              class="btn btn-primary btn-active text-white"
-              href="#"
-              role="button"
-              >Become an Investor
-            </a>
+              <a
+                name=""
+                id=""
+                class="btn btn-primary text-white me-md-2"
+                href="#"
+                role="button"
+                >I Need Funding</a
+              >
+              <a
+                name=""
+                id=""
+                class="btn btn-primary btn-active text-white"
+                href="#"
+                role="button"
+                >Become an Investor
+              </a>
+            </div>
           </div>
         </section>
         <!-- in-the-pipeline -->
-        <div class="in-the-pipeline text-center">
+        <section
+          class="in-the-pipeline text-center in-the-pipeline__container _container"
+        >
           <h3 class="fw-regular fs-4 text-primary px-4 d-inline-flex bg-white">
             In the pipeline
           </h3>
@@ -127,39 +139,184 @@
               />
             </li>
           </ul>
-        </div>
+        </section>
         <!-- traditional-fundraising  -->
         <section class="traditional-fundraising">
           <div>
-            <h3 class="text-primary fw-bold fs-52px">
+            <h3 class="text-primary fw-bold fs-52px lh-64px">
               Traditional Fundraising
               <span class="text-secondary">Doesn't Work</span> in DeFi
             </h3>
           </div>
           <ul class="list-unstyled">
-            <li class="list-card">
+            <li class="list-card card-item">
               <span>01</span>
               <p>
                 Without a big budget, it's hard to approach venture investors
               </p>
             </li>
-            <li class="list-card">
+            <li class="list-card card-item">
               <span>02</span>
               <p>VCs don't care about your DeFi idea – only their gains</p>
             </li>
-            <li class="list-card">
+            <li class="list-card card-item">
               <span>03</span>
               <p>They force you into selling your tokens at a huge discount…</p>
             </li>
-            <li class="list-card">
+            <li class="list-card card-item">
               <span>04</span>
               <p>...Then dump them at the first opportunity</p>
             </li>
-            <li class="list-card">
+            <li class="list-card card-item">
               <span>05</span>
-              <p>Result: your token collapses. Everyone goes home.</p>
+              <p>Result: your token col-5lapses. Everyone goes home.</p>
             </li>
           </ul>
+        </section>
+        <!-- the-answer -->
+        <section class="the-answer">
+          <div class="the-answer__container _container">
+            <div>
+              <p class="fw-bolder text-secondary fs-5 lh-1">— For Projects</p>
+              <h2 class="fw-bold fs-52px lh-64px">
+                Vision is the
+                <span class="text-secondary"> answer </span>
+              </h2>
+              <p class="fw-normal fs-5 w-50 w-md-100 mt-3">
+                You have an idea, IncuPie has a plan. We offer everything you
+                need to go from an early-stage idea to a successful exchange
+                listing.
+              </p>
+            </div>
+            <ul class="list-unstyled row row-cols-2 row-cols g-4 gap-4 ">
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Decentralized investments
+                  </h3>
+                  <p class="fw-normal text-gray ps-4 ms-3">
+                    we'll distribute your tokens among our huge and active
+                    community
+                  </p>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Access to professional investors
+                  </h3>
+                  <p class="fw-normal text-gray ps-4 ms-3">
+                    we'll put you in touch with funds and business angels ready
+                    to invest larger sums
+                  </p>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Exchange relations
+                  </h3>
+                  <p class="fw-normal text-gray ps-4 ms-3">
+                    get better terms when listing your token
+                  </p>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Staking
+                  </h3>
+                  <p class="fw-normal text-gray ps-4 ms-3">
+                    allow users to stake your tokens on DeFiPie and earn rewards
+                  </p>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Product-market fit analysis
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Detailed tokenomics
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Smart contract audit
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Community-building and social media marketing
+                  </h3>
+                </div>
+              </li>
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    White Paper, blog, and media content from the best authors
+                  </h3>
+                </div>
+              </li>
+            </ul>
+            <div class="d-flex flex-md-row gap-md-0 flex-column gap-3 mt-5">
+              <div>
+                <a href="#" class="btn btn-primary text-white me-md-2"
+                  >I Need Funding</a
+                >
+              </div>
+              <div>
+                <a
+                  href="#"
+                  class="ms-md-1 btn btn-primary btn-active text-white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- high-potential -->
+        <section class="high-potential">
+          <div class="high-potential__container _container">
+            <div>
+              <p class="fw-bolder text-secondary fs-5 lh-1">— For Projects</p>
+              <h2 class="fw-bold fs-52px lh-64px">
+                Vision is the
+                <span class="text-secondary"> answer </span>
+              </h2>
+              <p class="fw-normal fs-5 w-50 w-md-100 mt-3">
+                You have an idea, IncuPie has a plan. We offer everything you
+                need to go from an early-stage idea to a successful exchange
+                listing.
+              </p>
+            </div>
+            <ul class="list-unstyled">
+              <li class="p-4 d-flex card-item align-items-center">
+                <div class="d-flex flex-column gap-1">
+                  <h3 class="fw-regular fs-6 lh-1-5 title-check d-flex gap-3">
+                    Decentralized investments
+                  </h3>
+                  <p class="fw-normal text-gray ps-4 ms-3">
+                    we'll distribute your tokens among our huge and active
+                    community
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="btn btn-primary text-white me-2"
+                >I Need Funding</a
+              >
+            </div>
+          </div>
         </section>
       </main>
       <!-- footer -->
